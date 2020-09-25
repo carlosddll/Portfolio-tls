@@ -1,0 +1,88 @@
+
+/* Títulos */
+
+/* .hero{
+    width: 100%;
+    grid-column: 3/ span 3;
+    grid-row:2/3 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.titulo-container{
+    align-items: center;
+}
+
+.subtitulo{
+    font-family: 'roboto',sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: left;
+    line-height: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.titulo-nombre{
+    font-family: 'Oswald', sans-serif;
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+    color: white;
+}
+
+.titulo-nombre span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 7.5rem;
+    color: var(--amarillo);
+}
+
+.linea-amarilla{
+    margin-top: 55px;
+    width: 200px;
+    height: 10px;
+    background-color: var(--amarillo);
+    border-radius: 10px;
+} */
+
+/* Info Abajo */
+
+/* .contact-info{
+    grid-column: 1/ span 12;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.container-iconos{
+    grid-column: 2/ span 2;
+    font-size: 1.6rem;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-iconos i{
+    font-size: 2.5rem;
+}
+
+.container-contactinfo{
+    grid-column: 10/ span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+.container-contactinfo span{
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'roboto',sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+} */
