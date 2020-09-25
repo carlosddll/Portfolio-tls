@@ -1,16 +1,117 @@
+/* Variables */
+
+:root{
+    --amarillo: #FFD800;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 62.5%;
+}
+/* Grilla sección PRINCIPAL */
+
+.main{
+    background-image: url('../img/masthead.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 7.5rem 1fr 9.5rem;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/* Header */
+
+
+.header{
+    background: rgba(0, 0, 0, 0.4);
+    height: 7.5rem;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(124, 124, 124);
+}
+
+.logo{
+    display: flex;
+    padding-top: 5px;
+    align-content: center;
+    justify-content: center;
+    grid-column:1/ span 2;
+}
+
+.menu{
+    grid-column: 5/span 7;
+    height: 100%;
+}
+
+.menu-lista{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.menu-lista li{
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.menu-lista li a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: relative; 
+    height: 30%; 
+}
+
+.item a:before{
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: all .3s ease-out;
+}
+
+.item a:hover:before{
+    width: 100%;
+    left: 0%;
+}
+
+
 
 /* Títulos */
 
-/* .hero{
-    width: 100%;
+.hero{
     grid-column: 3/ span 3;
     grid-row:2/3 ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    text-align: center;
 }
 
 .titulo-container{
@@ -46,11 +147,11 @@
     height: 10px;
     background-color: var(--amarillo);
     border-radius: 10px;
-} */
+}
 
 /* Info Abajo */
 
-/* .contact-info{
+.contact-info{
     grid-column: 1/ span 12;
     grid-row: 3/4;
     display: grid;
@@ -85,4 +186,13 @@
     font-family: 'roboto',sans-serif;
     font-weight: 400;
     margin-bottom: 5px;
-} */
+}
+
+/* Sección 2 - SOBRE MÍ */
+
+
+.slide2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
