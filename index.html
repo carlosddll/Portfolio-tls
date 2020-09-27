@@ -23,25 +23,24 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <main id="fullpage">
-        <header class="section slideuno">
-            <section class="header">
-                <figure class="logo">
-                    <img src="./img/logo.png" alt="">
-                </figure>
-                <nav class="menu">
-                    <ul class="menu-lista">
-                        <li class="item"><a href="">Inicio</a></li>
-                        <li class="item"><a href="">Sobre mí</a></li>
-                        <li class="item"><a href="">Experiencia</a></li>
-                        <li class="item"><a href="">Skills</a></li>
-                        <li class="item"><a href="">Proyectos</a></li>
-                        <li class="item"><a href="">Clientes</a></li>
-                        <li class="item"><a href="">Contacto</a></li>
-                    </ul>
-                </nav>
-            </section>
 
+    <nav class="nav">
+        <figure class="logo">
+            <a href="#inicio"><img src="./img/logo.png" alt=""></a>
+        </figure>
+        <ul id="menu" class="menu" >
+            <li data-anchor="inicio" class="item"><a href="#inicio">Inicio</a></li>
+            <li data-anchor="sobre-mi" class="item"><a href="#sobre-mi">Sobre mí</a></li>
+            <li data-anchor="experiencia" class="item"><a href="#experiencia">Experiencia</a></li>
+            <li data-anchor="skills" class="item"><a href="#skills">Skills</a></li>
+            <li data-anchor="proyectos" class="item"><a href="#proyectos">Proyectos</a></li>
+            <li data-anchor="clientes" class="item"><a href="#clientes">Clientes</a></li>
+            <li data-anchor="contacto" class="item"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="fullpage">
+        <header class="section slideuno" id="inicio">
             <section class="hero">
                 <article class="titulo-container">
                     <h3 class="subtitulo">
@@ -68,7 +67,7 @@
                     <i class="fab fa-instagram-square"></i>
                 </div>
                 <div class="flecha">
-                    <a href=""><i class="fas fa-chevron-down"></i></a>
+                    <a href="#sobre-mi"><i class="fas fa-chevron-down"></i></a>
                 </div>
                 <div class="container-contactinfo">
                     <span>cdiazllontop@gmail.com</span>
@@ -77,11 +76,24 @@
                 </div>
             </section>
         </header>
-        <section class="section">
-            <h1>Productos</h1>
+
+        <section class="section seccion-completa" id="sobre-mi">
+            <h1>Sobre mí</h1>
         </section>
-        <footer class="section">
-            <h1>Footer</h1>
+        <section class="section seccion-completa" id="experiencia">
+            <h1>Experiencia</h1>
+        </section>
+        <section class="section seccion-completa" id="skills">
+            <h1>Skills</h1>
+        </section>
+        <section class="section seccion-completa" id="proyectos">
+            <h1>Proyectos</h1>
+        </section>
+        <section class="section seccion-completa" id="clientes">
+            <h1>Clientes</h1>
+        </section>
+        <footer class="section seccion-completa" id="contacto" >
+            <h1>Contacto</h1>
         </footer>
     </main>
 
