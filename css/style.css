@@ -1,0 +1,237 @@
+/* Variables */
+
+:root{
+    --amarillo: #FFD800;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 62.5%;
+}
+
+/* ------------------------------- */
+/* GENERALES */
+/* ------------------------------- */
+
+.fp-tableCell{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.fp-tableCell:first-child{
+    grid-template-rows: 7.5rem 1fr 9.5rem;
+}
+
+
+
+
+
+/* ------------------------------- */
+/* SLIDE 1 */
+/* ------------------------------- */
+
+
+/* Cabecera nav */
+
+.slideuno{
+    background-image: url('../img/masthead.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7.5rem 1fr 9.5rem;
+}
+
+.header{
+    grid-column: 1/ 2;
+    grid-row: 1/2;
+    background: rgba(0, 0, 0, 0.4);
+    height: 7.5rem;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(124, 124, 124);
+}
+
+.logo{
+    display: flex;
+    padding-top: 5px;
+    align-content: center;
+    justify-content: center;
+    grid-column:1/ span 2;
+}
+
+.menu{
+    grid-column: 5/span 7;
+    height: 100%;
+}
+
+.menu-lista{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.menu-lista li{
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.menu-lista li a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: relative; 
+    height: 30%; 
+}
+
+.item a:before{
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: all .3s ease-out;
+}
+
+.item a:hover:before{
+    width: 100%;
+    left: 0%;
+}
+
+/* Títulos */
+
+.hero{
+    grid-column: 1/ span 12;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.titulo-container{
+    grid-column: 3/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+}
+
+.subtitulo{
+    font-family: 'roboto',sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: left;
+    line-height: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.titulo-nombre{
+    font-family: 'Oswald', sans-serif;
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+    color: white;
+}
+
+.titulo-nombre span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 7.5rem;
+    color: var(--amarillo);
+}
+
+.linea-amarilla{
+    margin-top: 55px;
+    width: 200px;
+    height: 10px;
+    background-color: var(--amarillo);
+    border-radius: 10px;
+}
+
+
+/* Info Abajo */
+
+.contact-info{
+    grid-column: 1/ span 12;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+}
+
+
+.container-iconos{
+    grid-column: 2/ span 2;
+    font-size: 1.6rem;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-iconos i{
+    font-size: 2.5rem;
+}
+
+.flecha{
+    grid-column: 6/span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flecha a{
+    padding-top: 15px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 5rem;
+}
+
+.flecha a i{
+    animation: bajar-subir 1s ease infinite;
+}
+
+.container-contactinfo{
+    grid-column: 10/ span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+.container-contactinfo span{
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'roboto',sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+
+/* ---------------------------------------------
+/* ANIMACIONES */
+/* ----------------------------------------------- */ 
+
+@keyframes bajar-subir{
+    0%{ transform: translateY(20px);}
+    25%{ transform: translateY(0px);}
+    100%{ transform: translateY(20px);}
+}
