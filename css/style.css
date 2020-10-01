@@ -28,8 +28,9 @@ html, body{
 
 
 .seccion-completa{
+    margin: 0 auto;
     font-size: 7rem;
-    border: 1px solid red;
+    /* border: 1px solid black; */
 }
 
 
@@ -72,10 +73,6 @@ html, body{
     grid-column:1/ span 2;
 }
 
-/* .nav{
-    grid-column: 5/span 7;
-    height: 100%;
-} */
 
 .menu{
     grid-column: 5/span 7;
@@ -169,7 +166,6 @@ html, body{
     border-radius: 10px;
 }
 
-
 /* Info Abajo */
 
 .contact-info{
@@ -227,6 +223,14 @@ html, body{
     font-weight: 400;
     margin-bottom: 5px;
 }
+
+/*Color Menú Lateral*/
+
+.fp-right span {
+    background: gray !important;
+}
+
+
 
 
 /* ---------------------------------------------
