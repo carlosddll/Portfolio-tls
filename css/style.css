@@ -69,8 +69,9 @@ html, body{
     display: flex;
     padding-top: 5px;
     align-content: center;
-    justify-content: center;
-    grid-column:1/ span 2;
+    justify-content: flex-start;
+    grid-column:1/ span 4;
+    padding-left: 15%;
 }
 
 
@@ -117,6 +118,38 @@ html, body{
     left: 0%;
 }
 
+.contact-ipad{
+    grid-column: 5/span 5;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    
+}
+
+.contact-ipad li{
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.contact-ipad li:nth-child(2){
+    padding-left: 30px;
+}
+
+.burguer-menu{
+    display: none;
+    color: white;
+    font-size: 3.5rem;
+    grid-column: 11 / 12;
+    position: absolute;
+    left: 42%;
+}
+
+
 /* Títulos */
 
 .hero{
@@ -128,7 +161,7 @@ html, body{
 }
 
 .titulo-container{
-    grid-column: 3/6;
+    grid-column: 2/span 7;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,6 +221,10 @@ html, body{
 
 .container-iconos i{
     font-size: 2.5rem;
+}
+
+.container-iconos a{
+    color: white;
 }
 
 .flecha{
@@ -283,8 +320,77 @@ html, body{
 }
 
 
+@media (max-width:1024px){
+    .titulo-nombre{
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+    }
+    
+    .titulo-nombre span{
+        font-size: 6.5rem;
+    }
+    .menu{
+    display: none;
+    }
+    .burguer-menu{
+        display: flex;
+    }
+    .contact-ipad{
+        display: flex;
+    }
+    .container-contactinfo{
+        display: none;
+    } 
+}
 
 
+@media (max-width:768px){
+    .titulo-container{
+        grid-column: 2/span 7;
+        padding-left: 0;
+        padding-top: 30vh;
+    }
+
+    .container-iconos{
+        grid-column: 2/ span 3;
+    }
+}
+
+@media (max-width:720px){
+    .contact-ipad{
+        display: none;
+    }
+}
+
+@media (max-width:480px){
+    .titulo-nombre{
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+    
+    .titulo-nombre span{
+        font-size: 4.5rem;
+    }
+
+    .contact-info{
+        display: flex;
+        grid-column: 11/ span 2;
+        grid-row: 2/3;
+    }
+    .container-iconos{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .container-iconos i{
+        margin-top: 20px;
+    }
+    .flecha{
+        display: none;
+    }
+    
+}
 
 
 
