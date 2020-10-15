@@ -20,6 +20,7 @@ html, body{
 .fp-tableCell{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    height: 100vh !important;
 }
 
 .fp-tableCell:first-child{
@@ -147,6 +148,7 @@ html, body{
     grid-column: 11 / 12;
     position: absolute;
     left: 42%;
+    z-index: 5;
 }
 
 
@@ -330,7 +332,32 @@ html, body{
         font-size: 6.5rem;
     }
     .menu{
-    display: none;
+        grid-column: 5/span 8;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        right: -100%;
+        background-color: #5B01FF;
+        display: flex;
+        align-items:flex-start;
+        padding-left: 40px;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 55vw;
+        transition: .3s ease-in-out;
+    }
+
+    .menu.isactive{
+        right: 0;
+    }
+    
+
+    .menu li{
+        height: 80px;
+    }    
+    .menu li a{
+        font-size: 2rem;
     }
     .burguer-menu{
         display: flex;
